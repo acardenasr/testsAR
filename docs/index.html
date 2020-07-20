@@ -45,7 +45,7 @@
   </style>
 
   <div style='position: fixed; top: 10px; width:100%; text-align: center; z-index: 1;'>
-    <button class="button" id="btn1">Modelo</button>
+    <button class="button" id="btn1">Pastel</button>
     <button class="button" id="btn2">Sushi</button>
     <button class="button" id="btn3">Pizza</button>
   </div>
@@ -64,8 +64,8 @@
         
       document.getElementById("btn1").addEventListener("click", (e)=>{
         var el = document.querySelector('#entityID1');
-        el.setAttribute("gltf-model", 'logo2.glb)');
-        el.setAttribute("scale",'.10 .10 .10');
+        el.setAttribute("gltf-model", 'pastel.glb');
+        el.setAttribute("scale",'.20 .20 .20');
       })
                   
       document.getElementById("btn2").addEventListener("click", (e)=>{
@@ -73,7 +73,7 @@
         var el = document.querySelector('#entityID1');
   
         el.setAttribute("gltf-model", 'pruebasushi.glb');
-        el.setAttribute("scale",'.005 .005 .005');               
+        el.setAttribute("scale",'.20 .20 .20');               
       })
       document.getElementById("btn3").addEventListener("click", (e)=>{
                           
