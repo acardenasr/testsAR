@@ -38,14 +38,16 @@
     
     .button {
     border: solid 2px #ccc;
+    padding-left: 20px;
+    padding-right: 20px;
     }
     
   </style>
 
   <div style='position: fixed; top: 10px; width:100%; text-align: center; z-index: 1;'>
-    <button class="button" id="btn1">patel</button>
-    <button class="button" id="btn2">sandwich</button>
-    <button class="button" id="btn3">pizza</button>
+    <button class="button" id="btn1">Modelo</button>
+    <button class="button" id="btn2">Sushi</button>
+    <button class="button" id="btn3">Pizza</button>
   </div>
 
   <body style='margin : 0px; overflow: hidden;'></body>
@@ -62,7 +64,7 @@
         
       document.getElementById("btn1").addEventListener("click", (e)=>{
         var el = document.querySelector('#entityID1');
-        el.setAttribute("obj-model", 'obj:url(pastel\11547_Dessert_pie_v3_l2.obj);mtl:url(pastel\11547_Dessert_pie_v3_l2.mtl)');
+        el.setAttribute("gltf-model", 'logo2.glb)');
         el.setAttribute("scale",'.10 .10 .10');
       })
                   
@@ -70,7 +72,7 @@
                           
         var el = document.querySelector('#entityID1');
   
-        el.setAttribute("obj-model", 'obj:url(sandwich\13931_Reuben_Sandwich_on_Plate_v2_L1.obj);mtl:url(sandwich\13931_Reuben_Sandwich_on_Plate_v2_L1.mtl)');
+        el.setAttribute("gltf-model", 'pruebasushi.glb');
         el.setAttribute("scale",'.005 .005 .005');               
       })
       document.getElementById("btn3").addEventListener("click", (e)=>{
